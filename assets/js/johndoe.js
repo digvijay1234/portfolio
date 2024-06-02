@@ -55,6 +55,17 @@ $(window).on("load", function() {
     });
 });
 
+$(document).ready(function () {
+  $('.navbar-nav>li>a').on('click', function () {
+      $('.navbar-collapse').collapse('hide');
+  });
+
+  $('.nav-link').on('click', function () {
+      $('.nav-link').removeClass('active');
+      $(this).addClass('active');
+  });
+});
+
 
 // google maps
 function initMap() {
