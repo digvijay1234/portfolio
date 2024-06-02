@@ -11,10 +11,11 @@
     <!-- Bootstrap + JohnDoe main styles -->
 	<link rel="stylesheet" href="assets/css/johndoe.css">
     <link rel="icon" type="image/x-icon" href="assets/imgs/DJ.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     <!-- <a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a> -->
-    <header class="header">
+    <header class="header" style="background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/imgs/cover@300x.svg); background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/imgs/cover@300x.svg);">
         <div class="container">
             <ul class="social-icons pt-3">
                 <!-- <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li> -->
@@ -762,7 +763,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="card">
                        <div class="card-header has-icon">
-                            <img class="ti-write text-danger-logo" src="assets/imgs/GRC.webp" alt="Innovatia India Logo" aria-hidden="true" height= 100%>
+                            <img class="ti-write text-danger-logo" src="assets/imgs/GoRC_0x0_png.png" alt="Innovatia India Logo" aria-hidden="true" height= 100%>
                         </div>
                         <div class="card-body px-4 py-3">
                             <h5 class="mb-3 card-title text-dark">GoRadioControl</h5>
@@ -952,6 +953,14 @@
 
     <!-- JohnDoe js -->
     <script src="assets/js/johndoe.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.navbar-nav>li>a').on('click', function () {
+                $('.navbar-collapse').collapse('hide');
+            });
+        });
+    </script>
 
 </body>
 </html>
