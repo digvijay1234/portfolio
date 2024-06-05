@@ -11420,13 +11420,12 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: fit-content;
 }
 
 .project_img {
   width: max-content;
   max-width: 80%;
-  height: max-content;
+  height: fit-content;
   max-height: 80vh;
   margin: 0 auto; /* Center horizontally */
   object-fit: contain; /* Ensure the image scales without distortion */
