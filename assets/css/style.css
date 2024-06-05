@@ -11425,7 +11425,7 @@ li {
 .project_img {
   width: max-content;
   max-width: 80%;
-  height: fit-content;
+  height: max-content;
   max-height: 80vh;
   margin: 0 auto; /* Center horizontally */
   object-fit: contain; /* Ensure the image scales without distortion */
