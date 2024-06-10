@@ -11760,7 +11760,7 @@ pre .code {
   'opsz' 24
 }
 
-/*.project_header {
+.project_header {
   padding-top: 5rem;
   position: relative;
   height: 75vh;
@@ -11770,7 +11770,7 @@ pre .code {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #fff;
-}*/
+}
 
 .background-video {
   position: absolute;
