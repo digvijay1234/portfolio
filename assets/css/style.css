@@ -599,8 +599,7 @@ pre code {
   }
   .project_container {
     max-width: 720px;
-  }
-  
+  }  
 }
 
 @media (min-width: 992px) {
@@ -666,7 +665,7 @@ pre code {
 .project_grid_ferrari {
   display: flex;
   flex-wrap: nowrap;
-  height: 40px;
+  height: 24px;
   justify-content: space-around;
 }
 
@@ -2240,6 +2239,15 @@ pre code {
     margin-bottom: 15px; /* Optional: Adds space between rows */
     min-width: calc(50% - 10px); /* Ensures images shrink no smaller than this */
     box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
+  .project_grid_ferrari {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -11937,6 +11945,16 @@ pre .code {
     border-right: 0px solid #dee2e6;
     border-bottom: 1px solid #dee2e6;
   }
+  .project_grid_ferrari {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 }
 
 .contact {
