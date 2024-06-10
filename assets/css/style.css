@@ -600,6 +600,15 @@ pre code {
   .project_container {
     max-width: 720px;
   }  
+  .project_grid_ferrari {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (min-width: 992px) {
