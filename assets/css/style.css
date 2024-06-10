@@ -656,11 +656,18 @@ pre code {
 
 .project_grid img {
   flex: 1 1 calc(50% - 10px); /* Adjust the 10px for spacing between images */
-  max-width: calc(100% - 10px); /* Ensures no more than 4 images per row */
+  max-width: calc(100% - 10px); /* Ensures no more than 2 images per row */
   min-width: calc(25% - 10px); /* Ensures images shrink no smaller than this */
   box-sizing: border-box; /* Include padding and border in element's total width and height */
   width: 100%;
   height: 100%;
+}
+
+.project_grid_ferrari {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 40px;
+  justify-content: space-around;
 }
 
 .no-gutters {
@@ -11755,6 +11762,25 @@ pre .code {
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: #fff;
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+
+.ferrari-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .project_header-title {
