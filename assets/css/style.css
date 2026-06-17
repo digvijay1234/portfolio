@@ -676,6 +676,7 @@ pre code {
   flex: 0 0 calc((100% - 40px) / 3);
 }
 
+
 .project_grid {
   display: flex;
   flex-wrap: wrap;
@@ -5219,7 +5220,7 @@ input[type="button"].btn-block {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0;
   padding: 24px;
-  /* flex: 1; Ensure cards grow to the same height */
+  flex: 1; Ensure cards grow to the same height
 } */
 
 .company {
