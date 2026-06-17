@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 abbr[title],
@@ -640,6 +640,7 @@ pre code {
           flex-wrap: wrap;
   /* margin-right: -15px;
   margin-left: -15px; */
+  row-gap: 30px;
 }
 
 .project_grid {
@@ -703,11 +704,16 @@ pre code {
   max-width: 100%;
 }
 
-.col-md-4, .col-sm-6 {
+/* .col-md-4, .col-sm-6 {
   display: flex;
   flex: 1 0 33%; /* Adjust the basis and growth to fit 3 columns in a row */
-  max-width: 100%; /* Ensure columns don't exceed full width */
+  /* max-width: 100%; Ensure columns don't exceed full width */
+/* } */ */
+
+.col-md-4 {
+    display: flex;
 }
+
 
 .col-auto {
   -webkit-box-flex: 0;
@@ -5168,6 +5174,87 @@ input[type="button"].btn-block {
   border-radius: 0;
   flex: 1; Ensure cards grow to the same height
 }
+
+.card-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; Ensure the body takes all available space
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0;
+  padding: 24px;
+  /* flex: 1; Ensure cards grow to the same height */
+}
+
+.company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+
+}
+
+.company-logo,
+.client-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 50px;        /* Same height for all logos */}
+
+.company-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-logo-img,
+.client-logo-img {
+    max-width: 100%;
+    max-height: 40px;    /* Logo cannot exceed 40px */
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.company-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  object-fit: cover;
+}
+
+.client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.client-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* .client-logo-img {
+  width: 100%;
+  max-height: 80%;
+  object-fit: contain;
+} */
 
 .project_card {
   position: relative;
@@ -11021,9 +11108,13 @@ a.text-warning:hover, a.text-warning:focus {
   object-position: left;
   color: #F85C70 !important;
 }
-.role{
-  font-size: 18px;
-  color: #F85C70;
+
+.role {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    color: #F85C70;
 }
 
 .project_highlight{
